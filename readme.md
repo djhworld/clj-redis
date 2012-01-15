@@ -24,7 +24,7 @@ The connections represented by the return value of `clj-redis.client/init` are t
 
 ## Installation
 
-Depend on `[clj-redis "0.0.13"]` in your `project.clj`.
+Depend on `[clj-redis "0.0.12"]` in your `project.clj`.
 
 ## License
 
