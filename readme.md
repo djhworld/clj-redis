@@ -5,9 +5,9 @@ Clojure [Redis](http://redis.io) client library.
 ## Usage
 
     (require '[clj-redis.client :as redis])
-    
+
     (def db (redis/init))
-    
+
     (redis/ping db)
     => "PONG"
 
@@ -24,7 +24,7 @@ The connections represented by the return value of `clj-redis.client/init` are t
 
 ## Installation
 
-Depend on `[clj-redis "0.0.12"]` in your `project.clj`.
+Depend on `[clj-redis "0.0.14"]` in your `project.clj`.
 
 ## License
 
