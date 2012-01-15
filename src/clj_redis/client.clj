@@ -216,9 +216,9 @@
 
 (defn zrangebyscore-withscore
   ([p ^String k ^Double min ^Double max]
-    (lease p (fn [^Jedis j] (seq (.zrangeByScoreWithScore j k min max)))))
+    (lease p (fn [^Jedis j] (seq (.zrangeByScoreWithScores j k min max)))))
   ([p ^String k ^Double min ^Double max ^Integer offset ^Integer count]
-    (lease p (fn [^Jedis j] (seq (.zrangeByScoreWithScore j k min max offset count))))))
+    (lease p (fn [^Jedis j] (seq (.zrangeByScoreWithScores j k min max offset count))))))
 
 (defn zrevrangebyscore
   ([p ^String k ^Double min ^Double max]
@@ -228,9 +228,9 @@
 
 (defn zrevrangebyscore-withscore
   ([p ^String k ^Double min ^Double max]
-    (lease p (fn [^Jedis j] (seq (.zrevrangeByScoreWithScore j k min max)))))
+    (lease p (fn [^Jedis j] (seq (.zrevrangeByScoreWithScores j k min max)))))
   ([p ^String k ^Double min ^Double max ^Integer offset ^Integer count]
-    (lease p (fn [^Jedis j] (seq (.zrevrangeByScoreWithScore j k min max offset count))))))
+    (lease p (fn [^Jedis j] (seq (.zrevrangeByScoreWithScores j k min max offset count))))))
 
 (defn zrange [p ^String k ^Integer start ^Integer end]
   (lease p (fn [^Jedis j] (seq (.zrange j k start end)))))
