@@ -1,4 +1,4 @@
-** Please note this is a fork **: Updates include upgrading the library to use Jedis 2.0.0 and adding some additional commands like `zRevRangeByScore`
+*Please note this is a fork*: Updates include upgrading the library to use Jedis 2.0.0 and adding some additional commands like `zRevRangeByScore`
 # clj-redis
 
 Clojure [Redis](http://redis.io) client library.
