@@ -1,3 +1,4 @@
+**Please note this is a fork**: Updates include upgrading the library to use Jedis 2.0.0 and adding some additional commands like `zRevRangeByScore`
 # clj-redis
 
 Clojure [Redis](http://redis.io) client library.
@@ -24,7 +25,7 @@ The connections represented by the return value of `clj-redis.client/init` are t
 
 ## Installation
 
-Depend on `[clj-redis "0.0.14"]` in your `project.clj`.
+Depend on `[clj-redis "0.0.12"]` in your `project.clj`.
 
 ## License
 
