@@ -117,6 +117,8 @@
 (defn setex [p ^String k ^Integer s ^String v]
   (lease p (fn [^Jedis j] (.setex j k s v))))
 
+(defn strlen [p ^String k]
+  (lease p (fn [^Jedis j] (.strlen j k))))
 
 ; Lists
 
